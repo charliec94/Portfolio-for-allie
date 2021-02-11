@@ -1,0 +1,24 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  // This defines what 1rem is
+  font-size: 62.5%;
+} //1 rem = 10px; 10px/16px = 62.5%
+
+body {
+  background: url(../img/group2.svg) no-repeat center center fixed;
+  background-size: cover;
+  font-family: $font;
+  margin: 2.5vh;
+
+  @media only screen and (min-width: $phone) {
+    background: url(../img/group.svg) no-repeat fixed;
+    background-size: cover;
+  }
+}
