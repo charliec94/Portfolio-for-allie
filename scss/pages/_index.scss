@@ -3,12 +3,29 @@
   font-weight: bold;
   color: $black;
   margin-bottom: 8rem;
+
+  @media only screen and (min-width: $phone) {
+    margin-top: 5rem;
+  }
+
+  .line {
+    &:before {
+      @media only screen and (min-width: $phone) {
+        background-color: $black;
+      }
+    }
+  }
 }
 
 .hello {
   font-size: 1.8rem;
   color: $blue;
   margin-top: 2rem;
+
+  @media only screen and (min-width: $phone) {
+    font-size: 2rem;
+    margin-top: 15rem;
+  }
 }
 
 .profile {
@@ -19,12 +36,20 @@
     font-weight: bold;
     letter-spacing: 1.5px;
     margin-bottom: 0.5rem;
+
+    @media only screen and (min-width: $phone) {
+      font-size: 8rem;
+    }
   }
 
   &__spec {
     font-size: 1.9rem;
     font-weight: bold;
     margin-bottom: 2rem;
+
+    @media only screen and (min-width: $phone) {
+      font-size: 2.4rem;
+    }
   }
 
   &__description {
@@ -32,16 +57,24 @@
     font-weight: 300;
     width: 23rem;
     margin-bottom: 10rem;
+    @media only screen and (min-width: $phone) {
+      font-size: 2rem;
+    }
   }
 }
 
 .contact {
   color: $grey-dark;
 
+  @media only screen and (min-width: $phone) {
+    color: $white;
+    margin: 18rem 0rem;
+  }
+
   &__display--title {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     font-weight: bold;
-    margin-bottom: 1.7rem;
+    margin-bottom: 4rem;
   }
 
   &__display--email {
@@ -49,9 +82,14 @@
     font-weight: medium;
     margin-bottom: 1.7rem;
 
+    @media screen and (min-width: $phone) {
+      float: left;
+      margin-right: 7rem;
+    }
+
     & span {
       display: block;
-      font-size: 1.7rem;
+      font-size: 1.8rem;
       font-weight: 300;
       margin-top: 1.5rem;
     }
@@ -78,6 +116,14 @@
   font-size: 1.6rem;
   font-weight: bold;
 
+  @media screen and (min-width: $phone) {
+    transform: rotate(90deg);
+    display: inline-block;
+    position: absolute;
+    left: 58rem;
+    top: 108rem;
+  }
+
   &__description {
     float: left;
     padding: 0.5rem;
@@ -92,6 +138,10 @@
     & img {
       width: 3.8rem;
       height: 2.4rem;
+
+      @media screen and (min-width: $phone) {
+        transform: rotate(-90deg);
+      }
     }
   }
 }
@@ -110,6 +160,10 @@
     vertical-align: middle;
     width: 4rem;
     margin-right: 1rem;
+
+    @media only screen and (min-width: $phone) {
+      background-color: $white;
+    }
   }
 }
 
