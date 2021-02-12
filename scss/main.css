@@ -12,7 +12,7 @@ html {
 }
 
 body {
-  background: url(img/group2.svg) no-repeat center center fixed;
+  background: url(../img/Group2.svg) no-repeat center center fixed;
   background-size: cover;
   font-family: "Roboto", sans-serif;
   margin: 2.5vh;
@@ -20,7 +20,7 @@ body {
 
 @media only screen and (min-width: 376px) {
   body {
-    background: url(img/group.svg) no-repeat fixed;
+    background: url(../img/Group.svg) no-repeat fixed;
     background-size: cover;
     margin: 3vh 0vh 3vh 9vh;
   }
