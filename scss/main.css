@@ -4,7 +4,7 @@
   margin: 0;
   padding: 0;
   -webkit-box-sizing: inherit;
-          box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 html {
@@ -12,7 +12,7 @@ html {
 }
 
 body {
-  background: url(../img/group2.svg) no-repeat center center fixed;
+  background: url(img/group2.svg) no-repeat center center fixed;
   background-size: cover;
   font-family: "Roboto", sans-serif;
   margin: 2.5vh;
@@ -20,7 +20,7 @@ body {
 
 @media only screen and (min-width: 376px) {
   body {
-    background: url(../img/group.svg) no-repeat fixed;
+    background: url(img/group.svg) no-repeat fixed;
     background-size: cover;
     margin: 3vh 0vh 3vh 9vh;
   }
@@ -164,7 +164,7 @@ body {
 @media screen and (min-width: 376px) {
   .footer {
     -webkit-transform: rotate(90deg);
-            transform: rotate(90deg);
+    transform: rotate(90deg);
     display: inline-block;
     position: absolute;
     left: 58rem;
@@ -177,20 +177,26 @@ body {
   padding: 0.5rem;
 }
 
-.footer__icon-3, .footer__icon-2, .footer__icon-1 {
+.footer__icon-3,
+.footer__icon-2,
+.footer__icon-1 {
   display: inline;
   margin: 1.5rem 0.6rem 1.5rem 1.7rem;
 }
 
-.footer__icon-3 img, .footer__icon-2 img, .footer__icon-1 img {
+.footer__icon-3 img,
+.footer__icon-2 img,
+.footer__icon-1 img {
   width: 3.8rem;
   height: 2.4rem;
 }
 
 @media screen and (min-width: 376px) {
-  .footer__icon-3 img, .footer__icon-2 img, .footer__icon-1 img {
+  .footer__icon-3 img,
+  .footer__icon-2 img,
+  .footer__icon-1 img {
     -webkit-transform: rotate(-90deg);
-            transform: rotate(-90deg);
+    transform: rotate(-90deg);
   }
 }
 
